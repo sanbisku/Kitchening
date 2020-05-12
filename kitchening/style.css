@@ -1,0 +1,210 @@
+/*Mobile*/
+* {
+    box-sizing: border-box;
+}
+section.banner {
+    display: none;
+}
+body {
+    background-image: url(../html/images/bg-body.png);
+    font-family: Arial, Helvetica, sans-serif;
+}
+img.logo {
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: block;
+}
+header {
+    margin-bottom: 10px;
+}
+header a {
+    text-decoration: none;
+}
+header nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    width: 100%;
+}
+header nav ul li {
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+header nav:hover ul {
+    display: block;
+}
+img.photo {
+    width: 100%;
+}
+img.special {
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+div.photo-container {
+    position: relative;
+}
+.photo-container .zoom {
+    position: absolute;
+    width: 100%;
+    z-index: 12;
+    top: 40%;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 0;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+}
+article.product {
+    margin-bottom: 20px;
+}
+article.product p {
+    color: gray;
+}
+a.more {
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+    background-color: grey;
+    padding: 10px;
+}
+footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+footer ul li {
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    header nav ul,
+    header nav ul:hover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header nav ul li {
+        width: 12.5%;
+        font-size: 10px;
+    }
+    section.banner {
+        display: block;
+    }
+    section.banner img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    article.product {
+        width: 50%;
+    }
+    section.vip-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    img.photo {
+        width: 100%;
+    }
+    img.special {
+        position: absolute;
+        top: 0;
+        left: 80%;
+    }
+    div.photo-container {
+        position: relative;
+    }
+    .photo-container .zoom {
+        position: absolute;
+        width: 100%;
+        z-index: 12;
+        top: 40%;
+        left: 0;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 12px 0;
+        color: #fff;
+        background-color: rgba(0, 0, 0, .5);
+        box-sizing: border-box;
+    }
+    article.product {
+        margin-bottom: 20px;
+    }
+    article.product p {
+        color: gray;
+    }
+    a.more {
+        color: white;
+        text-decoration: none;
+        margin-top: 5px;
+        background-color: grey;
+        padding: 10px;
+    }
+} 
+/*Desktop*/
+@media only screen and (min-width: 1080px) {
+    header nav a.toggle-nav {
+        display: none;
+    }
+    header nav ul,
+    header nav ul:hover {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    header nav ul li {
+        width: 12.5%;
+        font-size: 10px;
+    }
+    section.banner {
+        display: block;
+    }
+    section.banner img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    article.product {
+        width: 30%;
+    }
+    section.vip-products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    div.container {
+        margin: 0 auto;
+        width: 90%;
+    }
+    footer ul {
+        display: flex;
+        justify-content: center;
+        background-color: red;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    footer ul li {
+        border-right: 1px solid white;
+    }
+    footer ul li:last-child {
+        border: 0;
+    }
+}
